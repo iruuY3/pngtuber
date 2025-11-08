@@ -1,0 +1,23 @@
+body {
+      margin: 0;
+      background: transparent; /* Fundo transparente pro OBS */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      position: absolute;
+    }
+    #imagem { z-index: 1; }
+    #acao {
+      z-index: 2;
+      transition: opacity 0.2s ease;
+    }
+    .hidden {
+      opacity: 0;
+    }
